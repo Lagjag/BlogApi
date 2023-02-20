@@ -49,6 +49,10 @@ Colocaremos el nombre de la BBDD, usuario y contraseña que deseemos. también t
 ```sh
 APP_ENV=dev
 ```
+Nada más haber clonado el proyecto deberemos hacer:
+```sh
+composer install
+```
 Tras esto podremos empezar a crear la BBDD tanto normal como la de test. Para ello lo primero que ahremos será crear la BBDD para dev con el siguiente comando:
 ```sh
 php bin/console doctrine:database:create
@@ -67,6 +71,11 @@ Adicionalmente habría que cargar los datos para el modelo de test y así poder 
 php bin/console hautelook:fixtures:load --env=test --no-bundles
 ```
 También se puede realizar el mismo comando con --env=dev para tener datos primarios en la api.
+
+También deberemos crear el par de keys publica y privada para el JWT:
+```sh
+php bin/console lexik:jwt:generate-keypair
+```
 
 ## Test Unitarios
 Todos los test unitarios se encuentran bajo la carpeta Test. Mediante el comando:
