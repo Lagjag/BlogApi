@@ -1,0 +1,16 @@
+App\Entity\Author:
+    author_1:
+      name: Michael
+      address: Test Address
+      age: 21
+      user: '@user_1'
+    author_2:
+      name: <firstName()>
+      address: <address()>
+      age: <numberBetween(16,90)>
+      user: '@user_2'
+    author_3:
+      name: <firstName()>
+      address: <address()>
+      age: <numberBetween(16,90)>
+      user: '@user_3'

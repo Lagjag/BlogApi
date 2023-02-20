@@ -1,0 +1,5 @@
+App\Entity\Category:
+    category_1:
+      name: Prueba
+    category_{2..10}:
+      name: <word()>

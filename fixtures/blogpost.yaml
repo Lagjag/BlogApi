@@ -1,0 +1,13 @@
+App\Entity\BlogPost:
+    post_1:
+      title: Test title
+      body: body text
+      category: '@category_1'
+      author: '@author_1'
+      createdAt: <(new DateTime('2019-02-16T13:21:36+00:00'))>
+      updatedAt: <(new DateTime('2019-02-16T13:21:36+00:00'))>
+    post_{2..30}:
+      title: <word()>
+      body: <text()>
+      category: '@category_*'
+      author: '@author_*'
